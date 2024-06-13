@@ -1,0 +1,22 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /Users/mbie/dev/wifi_monitor/build/bootloader/esp-idf/esptool_py && /Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/mbie/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/mbie/dev/wifi_monitor/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] Linking C static library esp-idf/spiffs/libspiffs.a
+[3/10] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_monitor.c.obj
+/Users/mbie/dev/wifi_monitor/main/wifi_monitor.c: In function 'wifi_sniffer_packet_handler':
+/Users/mbie/dev/wifi_monitor/main/wifi_monitor.c:63:28: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   63 |         uint8_t* payload = ppkt->payload;
+      |                            ^~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Building C object CMakeFiles/wifi_monitor.elf.dir/project_elf_src_esp32.c.obj
+[8/10] Linking CXX executable wifi_monitor.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/mbie/dev/wifi_monitor/build/wifi_monitor.bin
+[10/10] cd /Users/mbie/dev/wifi_monitor/build/esp-idf/esptool_py && /Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/mbie/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/mbie/dev/wifi_monitor/build/partition_table/partition-table.bin /Users/mbie/dev/wifi_monitor/build/wifi_monitor.bin
+wifi_monitor.bin binary size 0xba840 bytes. Smallest app partition is 0x100000 bytes. 0x457c0 bytes (27%) free.

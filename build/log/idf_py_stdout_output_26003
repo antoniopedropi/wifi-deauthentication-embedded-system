@@ -1,0 +1,24 @@
+[1/5] cd /Users/mbie/dev/wifi_monitor/build/esp-idf/esptool_py && /Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/mbie/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/mbie/dev/wifi_monitor/build/partition_table/partition-table.bin /Users/mbie/dev/wifi_monitor/build/wifi_monitor.bin
+wifi_monitor.bin binary size 0xc1ce0 bytes. Smallest app partition is 0x100000 bytes. 0x3e320 bytes (24%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/mbie/dev/wifi_monitor/build/bootloader/esp-idf/esptool_py && /Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/mbie/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/mbie/dev/wifi_monitor/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cd /Users/mbie/esp/esp-idf/components/esptool_py && /Users/mbie/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/mbie/esp/esp-idf -D "SERIAL_TOOL=/Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python;;/Users/mbie/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/mbie/dev/wifi_monitor/build -P /Users/mbie/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-1330 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 wifi_monitor.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/cu.usbserial-1330
+Connecting................
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e4:65:b8:77:5e:50
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+
+A fatal error occurred: Unable to verify flash chip connection (Serial data stream stopped: Possible serial noise or corruption.).
+FAILED: CMakeFiles/flash /Users/mbie/dev/wifi_monitor/build/CMakeFiles/flash 
+cd /Users/mbie/esp/esp-idf/components/esptool_py && /Users/mbie/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/mbie/esp/esp-idf -D "SERIAL_TOOL=/Users/mbie/.espressif/python_env/idf5.2_py3.12_env/bin/python;;/Users/mbie/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/mbie/dev/wifi_monitor/build -P /Users/mbie/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

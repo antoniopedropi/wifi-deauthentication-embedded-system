@@ -1,0 +1,2068 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 13 2024 22:54:11[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20ac4h (133828) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=00030aec vaddr=3ffbdb60 size=053cch ( 21452) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00035ec0 vaddr=40080000 size=0a158h ( 41304) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=7cfb8h (511928) map[0m
+[0;32mI (350) esp_image: segment 4: paddr=000bcfe0 vaddr=4008a158 size=0d91ch ( 55580) load[0m
+[0;32mI (384) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (405) cpu_start: Pro cpu start user code[0m
+[0;32mI (405) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (405) cpu_start: Application information:[0m
+[0;32mI (408) cpu_start: Project name:     wifi_monitor[0m
+[0;32mI (413) cpu_start: App version:      1[0m
+[0;32mI (418) cpu_start: Compile time:     Jun 13 2024 22:54:07[0m
+[0;32mI (424) cpu_start: ELF file SHA256:  87c19cbde...[0m
+[0;32mI (429) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (434) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (439) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (444) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (449) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (456) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFC7048 len 00018FB8 (99 KiB): DRAM[0m
+[0;32mI (468) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (474) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 40097A74 len 0000858C (33 KiB): IRAM[0m
+[0;32mI (488) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (495) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (509) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+I (554) wifi:wifi driver task: 3ffb7a10, prio:23, stack:6656, core=0
+I (554) wifi:wifi firmware version: a9f5b59
+I (554) wifi:wifi certification version: v7.0
+I (554) wifi:config NVS flash: enabled
+I (554) wifi:config nano formating: disabled
+I (564) wifi:Init data frame dynamic rx buffer num: 32
+I (564) wifi:Init static rx mgmt buffer num: 5
+I (574) wifi:Init management short buffer num: 32
+I (574) wifi:Init dynamic tx buffer num: 32
+I (574) wifi:Init static rx buffer size: 1600
+I (584) wifi:Init static rx buffer num: 10
+I (584) wifi:Init dynamic rx buffer num: 32
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (594) wifi_init: tcpip mbox: 32[0m
+[0;32mI (594) wifi_init: udp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp tx win: 5760[0m
+[0;32mI (604) wifi_init: tcp rx win: 5760[0m
+[0;32mI (614) wifi_init: tcp mss: 1440[0m
+[0;32mI (614) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (624) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (624) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (724) wifi:mode : null
+I (724) wifi:ic_enable_sniffer
+[0;32mI (724) wifi_sniffer: ESP32 WiFi Sniffer Initialized[0m
+[0;32mI (724) main_task: Returned from app_main()[0m
+[0;32mI (744) wifi_sniffer: Packet length: 346[0m
+[0;32mI (744) wifi_sniffer: Channel: 1[0m
+[0;32mI (744) wifi_sniffer: RSSI: -78[0m
+[0;32mI (744) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (854) wifi_sniffer: Packet length: 346[0m
+[0;32mI (854) wifi_sniffer: Channel: 1[0m
+[0;32mI (854) wifi_sniffer: RSSI: -77[0m
+[0;32mI (854) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (854) wifi_sniffer: Packet length: 298[0m
+[0;32mI (864) wifi_sniffer: Channel: 1[0m
+[0;32mI (864) wifi_sniffer: RSSI: -78[0m
+[0;32mI (864) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (874) wifi_sniffer: Packet length: 299[0m
+[0;32mI (874) wifi_sniffer: Channel: 1[0m
+[0;32mI (884) wifi_sniffer: RSSI: -76[0m
+[0;32mI (884) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (954) wifi_sniffer: Packet length: 346[0m
+[0;32mI (954) wifi_sniffer: Channel: 1[0m
+[0;32mI (954) wifi_sniffer: RSSI: -77[0m
+[0;32mI (954) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (954) wifi_sniffer: Packet length: 298[0m
+[0;32mI (964) wifi_sniffer: Channel: 1[0m
+[0;32mI (964) wifi_sniffer: RSSI: -77[0m
+[0;32mI (974) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (974) wifi_sniffer: Packet length: 292[0m
+[0;32mI (974) wifi_sniffer: Channel: 1[0m
+[0;32mI (984) wifi_sniffer: RSSI: -77[0m
+[0;32mI (984) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1054) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1054) wifi_sniffer: Channel: 1[0m
+[0;32mI (1054) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1054) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1154) wifi_sniffer: Packet length: 346[0m
+[0;32mI (1154) wifi_sniffer: Channel: 1[0m
+[0;32mI (1154) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1154) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (1164) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1164) wifi_sniffer: Channel: 1[0m
+[0;32mI (1174) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1174) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1184) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1184) wifi_sniffer: Channel: 1[0m
+[0;32mI (1184) wifi_sniffer: RSSI: -74[0m
+[0;32mI (1194) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1264) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1264) wifi_sniffer: Channel: 1[0m
+[0;32mI (1264) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1264) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1264) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1274) wifi_sniffer: Channel: 1[0m
+[0;32mI (1274) wifi_sniffer: RSSI: -74[0m
+[0;32mI (1284) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1364) wifi_sniffer: Packet length: 346[0m
+[0;32mI (1364) wifi_sniffer: Channel: 1[0m
+[0;32mI (1364) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1364) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (1374) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1374) wifi_sniffer: Channel: 1[0m
+[0;32mI (1374) wifi_sniffer: RSSI: -75[0m
+[0;32mI (1384) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1464) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1464) wifi_sniffer: Channel: 1[0m
+[0;32mI (1464) wifi_sniffer: RSSI: -78[0m
+[0;32mI (1464) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1474) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1474) wifi_sniffer: Channel: 1[0m
+[0;32mI (1484) wifi_sniffer: RSSI: -75[0m
+[0;32mI (1484) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1564) wifi_sniffer: Packet length: 346[0m
+[0;32mI (1564) wifi_sniffer: Channel: 1[0m
+[0;32mI (1564) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1564) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (1574) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1574) wifi_sniffer: Channel: 1[0m
+[0;32mI (1584) wifi_sniffer: RSSI: -75[0m
+[0;32mI (1584) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1674) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1674) wifi_sniffer: Channel: 1[0m
+[0;32mI (1674) wifi_sniffer: RSSI: -78[0m
+[0;32mI (1674) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1774) wifi_sniffer: Packet length: 346[0m
+[0;32mI (1774) wifi_sniffer: Channel: 1[0m
+[0;32mI (1774) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1774) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (1774) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1784) wifi_sniffer: Channel: 1[0m
+[0;32mI (1784) wifi_sniffer: RSSI: -78[0m
+[0;32mI (1794) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (1884) wifi_sniffer: Packet length: 299[0m
+[0;32mI (1884) wifi_sniffer: Channel: 1[0m
+[0;32mI (1884) wifi_sniffer: RSSI: -74[0m
+[0;32mI (1884) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (1974) wifi_sniffer: Packet length: 346[0m
+[0;32mI (1974) wifi_sniffer: Channel: 1[0m
+[0;32mI (1974) wifi_sniffer: RSSI: -78[0m
+[0;32mI (1974) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (1984) wifi_sniffer: Packet length: 298[0m
+[0;32mI (1984) wifi_sniffer: Channel: 1[0m
+[0;32mI (1994) wifi_sniffer: RSSI: -77[0m
+[0;32mI (1994) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2074) wifi_sniffer: Packet length: 346[0m
+[0;32mI (2074) wifi_sniffer: Channel: 1[0m
+[0;32mI (2074) wifi_sniffer: RSSI: -77[0m
+[0;32mI (2084) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (2084) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2094) wifi_sniffer: Channel: 1[0m
+[0;32mI (2094) wifi_sniffer: RSSI: -77[0m
+[0;32mI (2094) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2184) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2184) wifi_sniffer: Channel: 1[0m
+[0;32mI (2184) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2184) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2194) wifi_sniffer: Packet length: 299[0m
+[0;32mI (2194) wifi_sniffer: Channel: 1[0m
+[0;32mI (2194) wifi_sniffer: RSSI: -75[0m
+[0;32mI (2204) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (2284) wifi_sniffer: Packet length: 346[0m
+[0;32mI (2284) wifi_sniffer: Channel: 1[0m
+[0;32mI (2284) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2284) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (2294) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2294) wifi_sniffer: Channel: 1[0m
+[0;32mI (2294) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2304) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2384) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2384) wifi_sniffer: Channel: 1[0m
+[0;32mI (2384) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2394) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2394) wifi_sniffer: Packet length: 299[0m
+[0;32mI (2394) wifi_sniffer: Channel: 1[0m
+[0;32mI (2404) wifi_sniffer: RSSI: -74[0m
+[0;32mI (2404) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (2494) wifi_sniffer: Packet length: 299[0m
+[0;32mI (2494) wifi_sniffer: Channel: 1[0m
+[0;32mI (2494) wifi_sniffer: RSSI: -74[0m
+[0;32mI (2494) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (2594) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2594) wifi_sniffer: Channel: 1[0m
+[0;32mI (2594) wifi_sniffer: RSSI: -77[0m
+[0;32mI (2594) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2694) wifi_sniffer: Packet length: 346[0m
+[0;32mI (2694) wifi_sniffer: Channel: 1[0m
+[0;32mI (2694) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2694) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (2694) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2704) wifi_sniffer: Channel: 1[0m
+[0;32mI (2704) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2714) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2794) wifi_sniffer: Packet length: 346[0m
+[0;32mI (2794) wifi_sniffer: Channel: 1[0m
+[0;32mI (2794) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2794) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (2804) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2804) wifi_sniffer: Channel: 1[0m
+[0;32mI (2814) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2814) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2814) wifi_sniffer: Packet length: 299[0m
+[0;32mI (2824) wifi_sniffer: Channel: 1[0m
+[0;32mI (2824) wifi_sniffer: RSSI: -74[0m
+[0;32mI (2834) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (2894) wifi_sniffer: Packet length: 346[0m
+[0;32mI (2894) wifi_sniffer: Channel: 1[0m
+[0;32mI (2894) wifi_sniffer: RSSI: -78[0m
+[0;32mI (2904) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (2904) wifi_sniffer: Packet length: 298[0m
+[0;32mI (2904) wifi_sniffer: Channel: 1[0m
+[0;32mI (2914) wifi_sniffer: RSSI: -79[0m
+[0;32mI (2914) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (2924) wifi_sniffer: Packet length: 299[0m
+[0;32mI (2924) wifi_sniffer: Channel: 1[0m
+[0;32mI (2934) wifi_sniffer: RSSI: -74[0m
+[0;32mI (2934) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3004) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3004) wifi_sniffer: Channel: 1[0m
+[0;32mI (3004) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3004) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (3104) wifi_sniffer: Packet length: 346[0m
+[0;32mI (3104) wifi_sniffer: Channel: 1[0m
+[0;32mI (3104) wifi_sniffer: RSSI: -79[0m
+[0;32mI (3104) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (3204) wifi_sniffer: Packet length: 346[0m
+[0;32mI (3204) wifi_sniffer: Channel: 1[0m
+[0;32mI (3204) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3204) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (3214) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3214) wifi_sniffer: Channel: 1[0m
+[0;32mI (3224) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3224) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (3314) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3314) wifi_sniffer: Channel: 1[0m
+[0;32mI (3314) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3314) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (3314) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3324) wifi_sniffer: Channel: 1[0m
+[0;32mI (3324) wifi_sniffer: RSSI: -75[0m
+[0;32mI (3324) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3414) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3414) wifi_sniffer: Channel: 1[0m
+[0;32mI (3414) wifi_sniffer: RSSI: -75[0m
+[0;32mI (3414) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3514) wifi_sniffer: Packet length: 346[0m
+[0;32mI (3514) wifi_sniffer: Channel: 1[0m
+[0;32mI (3514) wifi_sniffer: RSSI: -77[0m
+[0;32mI (3514) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (3524) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3524) wifi_sniffer: Channel: 1[0m
+[0;32mI (3524) wifi_sniffer: RSSI: -74[0m
+[0;32mI (3534) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3614) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3614) wifi_sniffer: Channel: 1[0m
+[0;32mI (3614) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3614) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (3624) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3624) wifi_sniffer: Channel: 1[0m
+[0;32mI (3634) wifi_sniffer: RSSI: -74[0m
+[0;32mI (3634) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3714) wifi_sniffer: Packet length: 346[0m
+[0;32mI (3714) wifi_sniffer: Channel: 1[0m
+[0;32mI (3714) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3714) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (3724) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3724) wifi_sniffer: Channel: 1[0m
+[0;32mI (3734) wifi_sniffer: RSSI: -75[0m
+[0;32mI (3734) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3824) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3824) wifi_sniffer: Channel: 1[0m
+[0;32mI (3824) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3824) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (3824) wifi_sniffer: Packet length: 299[0m
+[0;32mI (3834) wifi_sniffer: Channel: 1[0m
+[0;32mI (3834) wifi_sniffer: RSSI: -75[0m
+[0;32mI (3844) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (3924) wifi_sniffer: Packet length: 346[0m
+[0;32mI (3924) wifi_sniffer: Channel: 1[0m
+[0;32mI (3924) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3924) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (3924) wifi_sniffer: Packet length: 298[0m
+[0;32mI (3934) wifi_sniffer: Channel: 1[0m
+[0;32mI (3934) wifi_sniffer: RSSI: -78[0m
+[0;32mI (3944) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4024) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4024) wifi_sniffer: Channel: 1[0m
+[0;32mI (4024) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4024) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4124) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4124) wifi_sniffer: Channel: 1[0m
+[0;32mI (4124) wifi_sniffer: RSSI: -74[0m
+[0;32mI (4124) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4134) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4134) wifi_sniffer: Channel: 1[0m
+[0;32mI (4144) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4144) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4154) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4154) wifi_sniffer: Channel: 1[0m
+[0;32mI (4154) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4164) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4224) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4224) wifi_sniffer: Channel: 1[0m
+[0;32mI (4224) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4234) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4234) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4244) wifi_sniffer: Channel: 1[0m
+[0;32mI (4244) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4244) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4254) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4254) wifi_sniffer: Channel: 1[0m
+[0;32mI (4264) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4264) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4334) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4334) wifi_sniffer: Channel: 1[0m
+[0;32mI (4334) wifi_sniffer: RSSI: -77[0m
+[0;32mI (4334) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4334) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4344) wifi_sniffer: Channel: 1[0m
+[0;32mI (4344) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4354) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4434) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4434) wifi_sniffer: Channel: 1[0m
+[0;32mI (4434) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4434) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4534) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4534) wifi_sniffer: Channel: 1[0m
+[0;32mI (4534) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4534) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4544) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4544) wifi_sniffer: Channel: 1[0m
+[0;32mI (4554) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4554) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4644) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4644) wifi_sniffer: Channel: 1[0m
+[0;32mI (4644) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4644) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (4644) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4654) wifi_sniffer: Channel: 1[0m
+[0;32mI (4654) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4664) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4744) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4744) wifi_sniffer: Channel: 1[0m
+[0;32mI (4744) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4744) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4744) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4754) wifi_sniffer: Channel: 1[0m
+[0;32mI (4754) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4764) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4844) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4844) wifi_sniffer: Channel: 1[0m
+[0;32mI (4844) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4844) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4854) wifi_sniffer: Packet length: 299[0m
+[0;32mI (4854) wifi_sniffer: Channel: 1[0m
+[0;32mI (4854) wifi_sniffer: RSSI: -75[0m
+[0;32mI (4864) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (4944) wifi_sniffer: Packet length: 346[0m
+[0;32mI (4944) wifi_sniffer: Channel: 1[0m
+[0;32mI (4944) wifi_sniffer: RSSI: -78[0m
+[0;32mI (4944) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (4954) wifi_sniffer: Packet length: 298[0m
+[0;32mI (4954) wifi_sniffer: Channel: 1[0m
+[0;32mI (4964) wifi_sniffer: RSSI: -79[0m
+[0;32mI (4964) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5044) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5044) wifi_sniffer: Channel: 1[0m
+[0;32mI (5044) wifi_sniffer: RSSI: -78[0m
+[0;32mI (5054) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5154) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5154) wifi_sniffer: Channel: 1[0m
+[0;32mI (5154) wifi_sniffer: RSSI: -78[0m
+[0;32mI (5154) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5154) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5164) wifi_sniffer: Channel: 1[0m
+[0;32mI (5164) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5174) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5254) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5254) wifi_sniffer: Channel: 1[0m
+[0;32mI (5254) wifi_sniffer: RSSI: -78[0m
+[0;32mI (5254) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5254) wifi_sniffer: Packet length: 298[0m
+[0;32mI (5264) wifi_sniffer: Channel: 1[0m
+[0;32mI (5264) wifi_sniffer: RSSI: -79[0m
+[0;32mI (5274) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5354) wifi_sniffer: Packet length: 298[0m
+[0;32mI (5354) wifi_sniffer: Channel: 1[0m
+[0;32mI (5354) wifi_sniffer: RSSI: -78[0m
+[0;32mI (5364) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5364) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5364) wifi_sniffer: Channel: 1[0m
+[0;32mI (5374) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5374) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5454) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5454) wifi_sniffer: Channel: 1[0m
+[0;32mI (5454) wifi_sniffer: RSSI: -78[0m
+[0;32mI (5464) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5464) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5464) wifi_sniffer: Channel: 1[0m
+[0;32mI (5474) wifi_sniffer: RSSI: -75[0m
+[0;32mI (5474) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5564) wifi_sniffer: Packet length: 298[0m
+[0;32mI (5564) wifi_sniffer: Channel: 1[0m
+[0;32mI (5564) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5564) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5574) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5574) wifi_sniffer: Channel: 1[0m
+[0;32mI (5574) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5584) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5664) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5664) wifi_sniffer: Channel: 1[0m
+[0;32mI (5664) wifi_sniffer: RSSI: -79[0m
+[0;32mI (5664) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5674) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5674) wifi_sniffer: Channel: 1[0m
+[0;32mI (5674) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5684) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5764) wifi_sniffer: Packet length: 346[0m
+[0;32mI (5764) wifi_sniffer: Channel: 1[0m
+[0;32mI (5764) wifi_sniffer: RSSI: -79[0m
+[0;32mI (5764) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (5774) wifi_sniffer: Packet length: 298[0m
+[0;32mI (5774) wifi_sniffer: Channel: 1[0m
+[0;32mI (5784) wifi_sniffer: RSSI: -79[0m
+[0;32mI (5784) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5784) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5794) wifi_sniffer: Channel: 1[0m
+[0;32mI (5794) wifi_sniffer: RSSI: -74[0m
+[0;32mI (5804) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (5874) wifi_sniffer: Packet length: 298[0m
+[0;32mI (5874) wifi_sniffer: Channel: 1[0m
+[0;32mI (5874) wifi_sniffer: RSSI: -79[0m
+[0;32mI (5874) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (5874) wifi_sniffer: Packet length: 299[0m
+[0;32mI (5884) wifi_sniffer: Channel: 1[0m
+[0;32mI (5884) wifi_sniffer: RSSI: -75[0m
+[0;32mI (5884) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6074) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6074) wifi_sniffer: Channel: 1[0m
+[0;32mI (6074) wifi_sniffer: RSSI: -79[0m
+[0;32mI (6074) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6084) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6084) wifi_sniffer: Channel: 1[0m
+[0;32mI (6094) wifi_sniffer: RSSI: -75[0m
+[0;32mI (6094) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6174) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6174) wifi_sniffer: Channel: 1[0m
+[0;32mI (6174) wifi_sniffer: RSSI: -79[0m
+[0;32mI (6174) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6184) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6184) wifi_sniffer: Channel: 1[0m
+[0;32mI (6194) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6194) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6274) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6274) wifi_sniffer: Channel: 1[0m
+[0;32mI (6274) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6274) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6284) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6284) wifi_sniffer: Channel: 1[0m
+[0;32mI (6294) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6294) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6384) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6384) wifi_sniffer: Channel: 1[0m
+[0;32mI (6384) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6384) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6384) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6394) wifi_sniffer: Channel: 1[0m
+[0;32mI (6394) wifi_sniffer: RSSI: -75[0m
+[0;32mI (6394) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6484) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6484) wifi_sniffer: Channel: 1[0m
+[0;32mI (6484) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6484) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6484) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6494) wifi_sniffer: Channel: 1[0m
+[0;32mI (6494) wifi_sniffer: RSSI: -77[0m
+[0;32mI (6504) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6504) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6514) wifi_sniffer: Channel: 1[0m
+[0;32mI (6514) wifi_sniffer: RSSI: -74[0m
+[0;32mI (6514) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6584) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6584) wifi_sniffer: Channel: 1[0m
+[0;32mI (6584) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6584) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6594) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6594) wifi_sniffer: Channel: 1[0m
+[0;32mI (6594) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6604) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6604) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6614) wifi_sniffer: Channel: 1[0m
+[0;32mI (6614) wifi_sniffer: RSSI: -74[0m
+[0;32mI (6624) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6684) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6684) wifi_sniffer: Channel: 1[0m
+[0;32mI (6684) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6684) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6794) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6794) wifi_sniffer: Channel: 1[0m
+[0;32mI (6794) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6794) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6794) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6804) wifi_sniffer: Channel: 1[0m
+[0;32mI (6804) wifi_sniffer: RSSI: -71[0m
+[0;32mI (6814) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6894) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6894) wifi_sniffer: Channel: 1[0m
+[0;32mI (6894) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6894) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (6894) wifi_sniffer: Packet length: 298[0m
+[0;32mI (6904) wifi_sniffer: Channel: 1[0m
+[0;32mI (6904) wifi_sniffer: RSSI: -78[0m
+[0;32mI (6914) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (6914) wifi_sniffer: Packet length: 299[0m
+[0;32mI (6914) wifi_sniffer: Channel: 1[0m
+[0;32mI (6924) wifi_sniffer: RSSI: -74[0m
+[0;32mI (6924) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (6994) wifi_sniffer: Packet length: 346[0m
+[0;32mI (6994) wifi_sniffer: Channel: 1[0m
+[0;32mI (6994) wifi_sniffer: RSSI: -79[0m
+[0;32mI (6994) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7004) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7004) wifi_sniffer: Channel: 1[0m
+[0;32mI (7004) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7014) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7014) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7024) wifi_sniffer: Channel: 1[0m
+[0;32mI (7024) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7034) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7094) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7094) wifi_sniffer: Channel: 1[0m
+[0;32mI (7094) wifi_sniffer: RSSI: -79[0m
+[0;32mI (7104) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7194) wifi_sniffer: Packet length: 346[0m
+[0;32mI (7194) wifi_sniffer: Channel: 1[0m
+[0;32mI (7194) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7204) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7204) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7214) wifi_sniffer: Channel: 1[0m
+[0;32mI (7214) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7214) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7224) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7224) wifi_sniffer: Channel: 1[0m
+[0;32mI (7234) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7234) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7304) wifi_sniffer: Packet length: 346[0m
+[0;32mI (7304) wifi_sniffer: Channel: 1[0m
+[0;32mI (7304) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7304) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7304) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7314) wifi_sniffer: Channel: 1[0m
+[0;32mI (7314) wifi_sniffer: RSSI: -79[0m
+[0;32mI (7324) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7404) wifi_sniffer: Packet length: 346[0m
+[0;32mI (7404) wifi_sniffer: Channel: 1[0m
+[0;32mI (7404) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7404) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7414) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7414) wifi_sniffer: Channel: 1[0m
+[0;32mI (7414) wifi_sniffer: RSSI: -77[0m
+[0;32mI (7424) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7504) wifi_sniffer: Packet length: 346[0m
+[0;32mI (7504) wifi_sniffer: Channel: 1[0m
+[0;32mI (7504) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7504) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7514) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7514) wifi_sniffer: Channel: 1[0m
+[0;32mI (7524) wifi_sniffer: RSSI: -79[0m
+[0;32mI (7524) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7524) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7534) wifi_sniffer: Channel: 1[0m
+[0;32mI (7534) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7544) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7604) wifi_sniffer: Packet length: 346[0m
+[0;32mI (7604) wifi_sniffer: Channel: 1[0m
+[0;32mI (7604) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7614) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (7614) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7614) wifi_sniffer: Channel: 1[0m
+[0;32mI (7624) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7624) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7634) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7634) wifi_sniffer: Channel: 1[0m
+[0;32mI (7644) wifi_sniffer: RSSI: -75[0m
+[0;32mI (7644) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7714) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7714) wifi_sniffer: Channel: 1[0m
+[0;32mI (7714) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7714) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7714) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7724) wifi_sniffer: Channel: 1[0m
+[0;32mI (7724) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7734) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7814) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7814) wifi_sniffer: Channel: 1[0m
+[0;32mI (7814) wifi_sniffer: RSSI: -78[0m
+[0;32mI (7814) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7824) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7824) wifi_sniffer: Channel: 1[0m
+[0;32mI (7834) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7834) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (7914) wifi_sniffer: Packet length: 298[0m
+[0;32mI (7914) wifi_sniffer: Channel: 1[0m
+[0;32mI (7914) wifi_sniffer: RSSI: -77[0m
+[0;32mI (7924) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (7924) wifi_sniffer: Packet length: 299[0m
+[0;32mI (7924) wifi_sniffer: Channel: 1[0m
+[0;32mI (7934) wifi_sniffer: RSSI: -74[0m
+[0;32mI (7934) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8014) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8014) wifi_sniffer: Channel: 1[0m
+[0;32mI (8014) wifi_sniffer: RSSI: -77[0m
+[0;32mI (8024) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8024) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8024) wifi_sniffer: Channel: 1[0m
+[0;32mI (8034) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8034) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8124) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8124) wifi_sniffer: Channel: 1[0m
+[0;32mI (8124) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8124) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8124) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8134) wifi_sniffer: Channel: 1[0m
+[0;32mI (8134) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8134) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8144) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8144) wifi_sniffer: Channel: 1[0m
+[0;32mI (8154) wifi_sniffer: RSSI: -75[0m
+[0;32mI (8154) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8224) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8224) wifi_sniffer: Channel: 1[0m
+[0;32mI (8224) wifi_sniffer: RSSI: -77[0m
+[0;32mI (8224) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8224) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8234) wifi_sniffer: Channel: 1[0m
+[0;32mI (8234) wifi_sniffer: RSSI: -77[0m
+[0;32mI (8244) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8324) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8324) wifi_sniffer: Channel: 1[0m
+[0;32mI (8324) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8324) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8334) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8334) wifi_sniffer: Channel: 1[0m
+[0;32mI (8344) wifi_sniffer: RSSI: -75[0m
+[0;32mI (8344) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8424) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8424) wifi_sniffer: Channel: 1[0m
+[0;32mI (8424) wifi_sniffer: RSSI: -77[0m
+[0;32mI (8424) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8434) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8434) wifi_sniffer: Channel: 1[0m
+[0;32mI (8444) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8444) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8454) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8454) wifi_sniffer: Channel: 1[0m
+[0;32mI (8454) wifi_sniffer: RSSI: -74[0m
+[0;32mI (8464) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8534) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8534) wifi_sniffer: Channel: 1[0m
+[0;32mI (8534) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8534) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8534) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8544) wifi_sniffer: Channel: 1[0m
+[0;32mI (8544) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8544) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8554) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8554) wifi_sniffer: Channel: 1[0m
+[0;32mI (8564) wifi_sniffer: RSSI: -74[0m
+[0;32mI (8564) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8634) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8634) wifi_sniffer: Channel: 1[0m
+[0;32mI (8634) wifi_sniffer: RSSI: -77[0m
+[0;32mI (8634) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8644) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8644) wifi_sniffer: Channel: 1[0m
+[0;32mI (8644) wifi_sniffer: RSSI: -74[0m
+[0;32mI (8654) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8734) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8734) wifi_sniffer: Channel: 1[0m
+[0;32mI (8734) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8734) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8744) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8744) wifi_sniffer: Channel: 1[0m
+[0;32mI (8754) wifi_sniffer: RSSI: -75[0m
+[0;32mI (8754) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8844) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8844) wifi_sniffer: Channel: 1[0m
+[0;32mI (8844) wifi_sniffer: RSSI: -75[0m
+[0;32mI (8844) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (8944) wifi_sniffer: Packet length: 346[0m
+[0;32mI (8944) wifi_sniffer: Channel: 1[0m
+[0;32mI (8944) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8944) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (8944) wifi_sniffer: Packet length: 298[0m
+[0;32mI (8954) wifi_sniffer: Channel: 1[0m
+[0;32mI (8954) wifi_sniffer: RSSI: -78[0m
+[0;32mI (8954) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (8964) wifi_sniffer: Packet length: 299[0m
+[0;32mI (8964) wifi_sniffer: Channel: 1[0m
+[0;32mI (8974) wifi_sniffer: RSSI: -74[0m
+[0;32mI (8974) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9044) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9044) wifi_sniffer: Channel: 1[0m
+[0;32mI (9044) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9044) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9054) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9054) wifi_sniffer: Channel: 1[0m
+[0;32mI (9054) wifi_sniffer: RSSI: -74[0m
+[0;32mI (9064) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9144) wifi_sniffer: Packet length: 346[0m
+[0;32mI (9144) wifi_sniffer: Channel: 1[0m
+[0;32mI (9144) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9144) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (9154) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9154) wifi_sniffer: Channel: 1[0m
+[0;32mI (9154) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9164) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9244) wifi_sniffer: Packet length: 346[0m
+[0;32mI (9244) wifi_sniffer: Channel: 1[0m
+[0;32mI (9244) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9244) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (9254) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9254) wifi_sniffer: Channel: 1[0m
+[0;32mI (9264) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9264) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9274) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9274) wifi_sniffer: Channel: 1[0m
+[0;32mI (9274) wifi_sniffer: RSSI: -75[0m
+[0;32mI (9284) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9354) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9354) wifi_sniffer: Channel: 1[0m
+[0;32mI (9354) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9354) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9454) wifi_sniffer: Packet length: 346[0m
+[0;32mI (9454) wifi_sniffer: Channel: 1[0m
+[0;32mI (9454) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9454) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (9454) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9464) wifi_sniffer: Channel: 1[0m
+[0;32mI (9464) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9474) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9474) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9474) wifi_sniffer: Channel: 1[0m
+[0;32mI (9484) wifi_sniffer: RSSI: -75[0m
+[0;32mI (9484) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9554) wifi_sniffer: Packet length: 346[0m
+[0;32mI (9554) wifi_sniffer: Channel: 1[0m
+[0;32mI (9554) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9554) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (9564) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9564) wifi_sniffer: Channel: 1[0m
+[0;32mI (9564) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9574) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9574) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9584) wifi_sniffer: Channel: 1[0m
+[0;32mI (9584) wifi_sniffer: RSSI: -75[0m
+[0;32mI (9594) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9654) wifi_sniffer: Packet length: 346[0m
+[0;32mI (9654) wifi_sniffer: Channel: 1[0m
+[0;32mI (9654) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9654) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (9664) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9664) wifi_sniffer: Channel: 1[0m
+[0;32mI (9674) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9674) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9684) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9684) wifi_sniffer: Channel: 1[0m
+[0;32mI (9684) wifi_sniffer: RSSI: -74[0m
+[0;32mI (9694) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9864) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9864) wifi_sniffer: Channel: 1[0m
+[0;32mI (9864) wifi_sniffer: RSSI: -77[0m
+[0;32mI (9864) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9874) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9874) wifi_sniffer: Channel: 1[0m
+[0;32mI (9874) wifi_sniffer: RSSI: -74[0m
+[0;32mI (9884) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (9964) wifi_sniffer: Packet length: 298[0m
+[0;32mI (9964) wifi_sniffer: Channel: 1[0m
+[0;32mI (9964) wifi_sniffer: RSSI: -78[0m
+[0;32mI (9964) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (9974) wifi_sniffer: Packet length: 299[0m
+[0;32mI (9974) wifi_sniffer: Channel: 1[0m
+[0;32mI (9984) wifi_sniffer: RSSI: -75[0m
+[0;32mI (9984) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10064) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10064) wifi_sniffer: Channel: 1[0m
+[0;32mI (10064) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10064) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10074) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10074) wifi_sniffer: Channel: 1[0m
+[0;32mI (10084) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10084) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10094) wifi_sniffer: Packet length: 299[0m
+[0;32mI (10094) wifi_sniffer: Channel: 1[0m
+[0;32mI (10094) wifi_sniffer: RSSI: -74[0m
+[0;32mI (10104) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10174) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10174) wifi_sniffer: Channel: 1[0m
+[0;32mI (10174) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10174) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10274) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10274) wifi_sniffer: Channel: 1[0m
+[0;32mI (10274) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10274) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10274) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10284) wifi_sniffer: Channel: 1[0m
+[0;32mI (10284) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10294) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10374) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10374) wifi_sniffer: Channel: 1[0m
+[0;32mI (10374) wifi_sniffer: RSSI: -77[0m
+[0;32mI (10374) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10384) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10384) wifi_sniffer: Channel: 1[0m
+[0;32mI (10384) wifi_sniffer: RSSI: -77[0m
+[0;32mI (10394) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10474) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10474) wifi_sniffer: Channel: 1[0m
+[0;32mI (10474) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10474) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10484) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10484) wifi_sniffer: Channel: 1[0m
+[0;32mI (10494) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10494) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10574) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10574) wifi_sniffer: Channel: 1[0m
+[0;32mI (10574) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10584) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10584) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10584) wifi_sniffer: Channel: 1[0m
+[0;32mI (10594) wifi_sniffer: RSSI: -78[0m
+[0;32mI (10594) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10604) wifi_sniffer: Packet length: 299[0m
+[0;32mI (10604) wifi_sniffer: Channel: 1[0m
+[0;32mI (10614) wifi_sniffer: RSSI: -74[0m
+[0;32mI (10614) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10684) wifi_sniffer: Packet length: 299[0m
+[0;32mI (10684) wifi_sniffer: Channel: 1[0m
+[0;32mI (10684) wifi_sniffer: RSSI: -74[0m
+[0;32mI (10694) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10784) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10784) wifi_sniffer: Channel: 1[0m
+[0;32mI (10784) wifi_sniffer: RSSI: -76[0m
+[0;32mI (10784) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10794) wifi_sniffer: Packet length: 299[0m
+[0;32mI (10794) wifi_sniffer: Channel: 1[0m
+[0;32mI (10804) wifi_sniffer: RSSI: -75[0m
+[0;32mI (10804) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10884) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10884) wifi_sniffer: Channel: 1[0m
+[0;32mI (10884) wifi_sniffer: RSSI: -77[0m
+[0;32mI (10884) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10894) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10894) wifi_sniffer: Channel: 1[0m
+[0;32mI (10904) wifi_sniffer: RSSI: -77[0m
+[0;32mI (10904) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (10904) wifi_sniffer: Packet length: 299[0m
+[0;32mI (10914) wifi_sniffer: Channel: 1[0m
+[0;32mI (10914) wifi_sniffer: RSSI: -75[0m
+[0;32mI (10924) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (10984) wifi_sniffer: Packet length: 346[0m
+[0;32mI (10984) wifi_sniffer: Channel: 1[0m
+[0;32mI (10984) wifi_sniffer: RSSI: -77[0m
+[0;32mI (10984) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (10994) wifi_sniffer: Packet length: 298[0m
+[0;32mI (10994) wifi_sniffer: Channel: 1[0m
+[0;32mI (11004) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11004) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11014) wifi_sniffer: Packet length: 299[0m
+[0;32mI (11014) wifi_sniffer: Channel: 1[0m
+[0;32mI (11024) wifi_sniffer: RSSI: -76[0m
+[0;32mI (11024) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (11094) wifi_sniffer: Packet length: 298[0m
+[0;32mI (11094) wifi_sniffer: Channel: 1[0m
+[0;32mI (11094) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11094) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11194) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11194) wifi_sniffer: Channel: 1[0m
+[0;32mI (11194) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11194) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11294) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11294) wifi_sniffer: Channel: 1[0m
+[0;32mI (11294) wifi_sniffer: RSSI: -78[0m
+[0;32mI (11294) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11304) wifi_sniffer: Packet length: 298[0m
+[0;32mI (11304) wifi_sniffer: Channel: 1[0m
+[0;32mI (11314) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11314) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11394) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11394) wifi_sniffer: Channel: 1[0m
+[0;32mI (11394) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11394) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11404) wifi_sniffer: Packet length: 298[0m
+[0;32mI (11404) wifi_sniffer: Channel: 1[0m
+[0;32mI (11414) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11414) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11424) wifi_sniffer: Packet length: 299[0m
+[0;32mI (11424) wifi_sniffer: Channel: 1[0m
+[0;32mI (11434) wifi_sniffer: RSSI: -75[0m
+[0;32mI (11434) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (11504) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11504) wifi_sniffer: Channel: 1[0m
+[0;32mI (11504) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11504) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11504) wifi_sniffer: Packet length: 298[0m
+[0;32mI (11514) wifi_sniffer: Channel: 1[0m
+[0;32mI (11514) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11514) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11604) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11604) wifi_sniffer: Channel: 1[0m
+[0;32mI (11604) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11604) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11704) wifi_sniffer: Packet length: 298[0m
+[0;32mI (11704) wifi_sniffer: Channel: 1[0m
+[0;32mI (11704) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11704) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (11714) wifi_sniffer: Packet length: 299[0m
+[0;32mI (11714) wifi_sniffer: Channel: 1[0m
+[0;32mI (11724) wifi_sniffer: RSSI: -75[0m
+[0;32mI (11724) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (11804) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11804) wifi_sniffer: Channel: 1[0m
+[0;32mI (11804) wifi_sniffer: RSSI: -77[0m
+[0;32mI (11804) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11814) wifi_sniffer: Packet length: 299[0m
+[0;32mI (11814) wifi_sniffer: Channel: 1[0m
+[0;32mI (11824) wifi_sniffer: RSSI: -74[0m
+[0;32mI (11824) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (11904) wifi_sniffer: Packet length: 346[0m
+[0;32mI (11904) wifi_sniffer: Channel: 1[0m
+[0;32mI (11904) wifi_sniffer: RSSI: -78[0m
+[0;32mI (11914) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (11914) wifi_sniffer: Packet length: 299[0m
+[0;32mI (11924) wifi_sniffer: Channel: 1[0m
+[0;32mI (11924) wifi_sniffer: RSSI: -74[0m
+[0;32mI (11924) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12014) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12014) wifi_sniffer: Channel: 1[0m
+[0;32mI (12014) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12014) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12014) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12024) wifi_sniffer: Channel: 1[0m
+[0;32mI (12024) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12034) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12114) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12114) wifi_sniffer: Channel: 1[0m
+[0;32mI (12114) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12114) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12124) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12124) wifi_sniffer: Channel: 1[0m
+[0;32mI (12124) wifi_sniffer: RSSI: -78[0m
+[0;32mI (12134) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12214) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12214) wifi_sniffer: Channel: 1[0m
+[0;32mI (12214) wifi_sniffer: RSSI: -76[0m
+[0;32mI (12214) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12224) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12224) wifi_sniffer: Channel: 1[0m
+[0;32mI (12234) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12234) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12244) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12244) wifi_sniffer: Channel: 1[0m
+[0;32mI (12244) wifi_sniffer: RSSI: -74[0m
+[0;32mI (12254) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12314) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12314) wifi_sniffer: Channel: 1[0m
+[0;32mI (12314) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12324) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12324) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12334) wifi_sniffer: Channel: 1[0m
+[0;32mI (12334) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12334) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12344) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12344) wifi_sniffer: Channel: 1[0m
+[0;32mI (12354) wifi_sniffer: RSSI: -74[0m
+[0;32mI (12354) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12424) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12424) wifi_sniffer: Channel: 1[0m
+[0;32mI (12424) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12424) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12424) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12434) wifi_sniffer: Channel: 1[0m
+[0;32mI (12434) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12444) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12444) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12454) wifi_sniffer: Channel: 1[0m
+[0;32mI (12454) wifi_sniffer: RSSI: -74[0m
+[0;32mI (12454) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12524) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12524) wifi_sniffer: Channel: 1[0m
+[0;32mI (12524) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12524) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12624) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12624) wifi_sniffer: Channel: 1[0m
+[0;32mI (12624) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12624) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12634) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12634) wifi_sniffer: Channel: 1[0m
+[0;32mI (12644) wifi_sniffer: RSSI: -75[0m
+[0;32mI (12644) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12724) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12724) wifi_sniffer: Channel: 1[0m
+[0;32mI (12724) wifi_sniffer: RSSI: -78[0m
+[0;32mI (12734) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12734) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12744) wifi_sniffer: Channel: 1[0m
+[0;32mI (12744) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12744) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12754) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12754) wifi_sniffer: Channel: 1[0m
+[0;32mI (12764) wifi_sniffer: RSSI: -74[0m
+[0;32mI (12764) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12834) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12834) wifi_sniffer: Channel: 1[0m
+[0;32mI (12834) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12834) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12834) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12844) wifi_sniffer: Channel: 1[0m
+[0;32mI (12844) wifi_sniffer: RSSI: -76[0m
+[0;32mI (12854) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12854) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12854) wifi_sniffer: Channel: 1[0m
+[0;32mI (12864) wifi_sniffer: RSSI: -75[0m
+[0;32mI (12864) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (12934) wifi_sniffer: Packet length: 346[0m
+[0;32mI (12934) wifi_sniffer: Channel: 1[0m
+[0;32mI (12934) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12934) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (12944) wifi_sniffer: Packet length: 298[0m
+[0;32mI (12944) wifi_sniffer: Channel: 1[0m
+[0;32mI (12944) wifi_sniffer: RSSI: -77[0m
+[0;32mI (12954) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (12954) wifi_sniffer: Packet length: 299[0m
+[0;32mI (12964) wifi_sniffer: Channel: 1[0m
+[0;32mI (12964) wifi_sniffer: RSSI: -75[0m
+[0;32mI (12974) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13034) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13034) wifi_sniffer: Channel: 1[0m
+[0;32mI (13034) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13034) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13044) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13044) wifi_sniffer: Channel: 1[0m
+[0;32mI (13054) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13054) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13134) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13134) wifi_sniffer: Channel: 1[0m
+[0;32mI (13134) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13144) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13144) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13144) wifi_sniffer: Channel: 1[0m
+[0;32mI (13154) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13154) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13164) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13164) wifi_sniffer: Channel: 1[0m
+[0;32mI (13174) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13174) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13244) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13244) wifi_sniffer: Channel: 1[0m
+[0;32mI (13244) wifi_sniffer: RSSI: -76[0m
+[0;32mI (13244) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13244) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13254) wifi_sniffer: Channel: 1[0m
+[0;32mI (13254) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13264) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13344) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13344) wifi_sniffer: Channel: 1[0m
+[0;32mI (13344) wifi_sniffer: RSSI: -78[0m
+[0;32mI (13344) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13344) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13354) wifi_sniffer: Channel: 1[0m
+[0;32mI (13354) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13364) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13444) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13444) wifi_sniffer: Channel: 1[0m
+[0;32mI (13444) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13444) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13454) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13454) wifi_sniffer: Channel: 1[0m
+[0;32mI (13464) wifi_sniffer: RSSI: -75[0m
+[0;32mI (13464) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13544) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13544) wifi_sniffer: Channel: 1[0m
+[0;32mI (13544) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13544) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13554) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13554) wifi_sniffer: Channel: 1[0m
+[0;32mI (13564) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13564) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13654) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13654) wifi_sniffer: Channel: 1[0m
+[0;32mI (13654) wifi_sniffer: RSSI: -78[0m
+[0;32mI (13654) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13654) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13664) wifi_sniffer: Channel: 1[0m
+[0;32mI (13664) wifi_sniffer: RSSI: -76[0m
+[0;32mI (13664) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13674) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13674) wifi_sniffer: Channel: 1[0m
+[0;32mI (13684) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13684) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13754) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13754) wifi_sniffer: Channel: 1[0m
+[0;32mI (13754) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13754) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13764) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13764) wifi_sniffer: Channel: 1[0m
+[0;32mI (13764) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13774) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13864) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13864) wifi_sniffer: Channel: 1[0m
+[0;32mI (13864) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13864) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (13954) wifi_sniffer: Packet length: 346[0m
+[0;32mI (13954) wifi_sniffer: Channel: 1[0m
+[0;32mI (13954) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13954) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (13964) wifi_sniffer: Packet length: 298[0m
+[0;32mI (13964) wifi_sniffer: Channel: 1[0m
+[0;32mI (13974) wifi_sniffer: RSSI: -77[0m
+[0;32mI (13974) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (13984) wifi_sniffer: Packet length: 299[0m
+[0;32mI (13984) wifi_sniffer: Channel: 1[0m
+[0;32mI (13994) wifi_sniffer: RSSI: -74[0m
+[0;32mI (13994) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14064) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14064) wifi_sniffer: Channel: 1[0m
+[0;32mI (14064) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14064) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14064) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14074) wifi_sniffer: Channel: 1[0m
+[0;32mI (14074) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14074) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14164) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14164) wifi_sniffer: Channel: 1[0m
+[0;32mI (14164) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14164) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14164) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14174) wifi_sniffer: Channel: 1[0m
+[0;32mI (14174) wifi_sniffer: RSSI: -78[0m
+[0;32mI (14184) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14184) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14194) wifi_sniffer: Channel: 1[0m
+[0;32mI (14194) wifi_sniffer: RSSI: -74[0m
+[0;32mI (14194) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14264) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14264) wifi_sniffer: Channel: 1[0m
+[0;32mI (14264) wifi_sniffer: RSSI: -78[0m
+[0;32mI (14264) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14274) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14274) wifi_sniffer: Channel: 1[0m
+[0;32mI (14284) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14284) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14284) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14294) wifi_sniffer: Channel: 1[0m
+[0;32mI (14294) wifi_sniffer: RSSI: -75[0m
+[0;32mI (14304) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14364) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14364) wifi_sniffer: Channel: 1[0m
+[0;32mI (14364) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14364) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14374) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14374) wifi_sniffer: Channel: 1[0m
+[0;32mI (14384) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14384) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14464) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14464) wifi_sniffer: Channel: 1[0m
+[0;32mI (14464) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14474) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14474) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14484) wifi_sniffer: Channel: 1[0m
+[0;32mI (14484) wifi_sniffer: RSSI: -74[0m
+[0;32mI (14484) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14674) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14674) wifi_sniffer: Channel: 1[0m
+[0;32mI (14674) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14674) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14684) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14684) wifi_sniffer: Channel: 1[0m
+[0;32mI (14684) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14694) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14694) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14704) wifi_sniffer: Channel: 1[0m
+[0;32mI (14704) wifi_sniffer: RSSI: -75[0m
+[0;32mI (14714) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14774) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14774) wifi_sniffer: Channel: 1[0m
+[0;32mI (14774) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14774) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14784) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14784) wifi_sniffer: Channel: 1[0m
+[0;32mI (14794) wifi_sniffer: RSSI: -75[0m
+[0;32mI (14794) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14874) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14874) wifi_sniffer: Channel: 1[0m
+[0;32mI (14874) wifi_sniffer: RSSI: -78[0m
+[0;32mI (14884) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14884) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14894) wifi_sniffer: Channel: 1[0m
+[0;32mI (14894) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14894) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (14904) wifi_sniffer: Packet length: 299[0m
+[0;32mI (14904) wifi_sniffer: Channel: 1[0m
+[0;32mI (14914) wifi_sniffer: RSSI: -74[0m
+[0;32mI (14914) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (14984) wifi_sniffer: Packet length: 346[0m
+[0;32mI (14984) wifi_sniffer: Channel: 1[0m
+[0;32mI (14984) wifi_sniffer: RSSI: -77[0m
+[0;32mI (14984) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (14984) wifi_sniffer: Packet length: 298[0m
+[0;32mI (14994) wifi_sniffer: Channel: 1[0m
+[0;32mI (14994) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15004) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15084) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15084) wifi_sniffer: Channel: 1[0m
+[0;32mI (15084) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15084) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15094) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15094) wifi_sniffer: Channel: 1[0m
+[0;32mI (15094) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15104) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15104) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15114) wifi_sniffer: Channel: 1[0m
+[0;32mI (15114) wifi_sniffer: RSSI: -74[0m
+[0;32mI (15124) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15184) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15184) wifi_sniffer: Channel: 1[0m
+[0;32mI (15184) wifi_sniffer: RSSI: -77[0m
+[0;32mI (15184) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15194) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15194) wifi_sniffer: Channel: 1[0m
+[0;32mI (15204) wifi_sniffer: RSSI: -77[0m
+[0;32mI (15204) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15214) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15214) wifi_sniffer: Channel: 1[0m
+[0;32mI (15214) wifi_sniffer: RSSI: -75[0m
+[0;32mI (15224) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15294) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15294) wifi_sniffer: Channel: 1[0m
+[0;32mI (15294) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15294) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15294) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15304) wifi_sniffer: Channel: 1[0m
+[0;32mI (15304) wifi_sniffer: RSSI: -74[0m
+[0;32mI (15304) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15394) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15394) wifi_sniffer: Channel: 1[0m
+[0;32mI (15394) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15394) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15404) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15404) wifi_sniffer: Channel: 1[0m
+[0;32mI (15404) wifi_sniffer: RSSI: -74[0m
+[0;32mI (15414) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15494) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15494) wifi_sniffer: Channel: 1[0m
+[0;32mI (15494) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15494) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15504) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15504) wifi_sniffer: Channel: 1[0m
+[0;32mI (15504) wifi_sniffer: RSSI: -74[0m
+[0;32mI (15514) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15594) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15594) wifi_sniffer: Channel: 1[0m
+[0;32mI (15594) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15594) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15604) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15604) wifi_sniffer: Channel: 1[0m
+[0;32mI (15614) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15614) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15614) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15624) wifi_sniffer: Channel: 1[0m
+[0;32mI (15624) wifi_sniffer: RSSI: -72[0m
+[0;32mI (15634) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15694) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15694) wifi_sniffer: Channel: 1[0m
+[0;32mI (15694) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15704) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15704) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15704) wifi_sniffer: Channel: 1[0m
+[0;32mI (15714) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15714) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15724) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15724) wifi_sniffer: Channel: 1[0m
+[0;32mI (15734) wifi_sniffer: RSSI: -75[0m
+[0;32mI (15734) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15804) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15804) wifi_sniffer: Channel: 1[0m
+[0;32mI (15804) wifi_sniffer: RSSI: -78[0m
+[0;32mI (15804) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (15804) wifi_sniffer: Packet length: 298[0m
+[0;32mI (15814) wifi_sniffer: Channel: 1[0m
+[0;32mI (15814) wifi_sniffer: RSSI: -77[0m
+[0;32mI (15824) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (15824) wifi_sniffer: Packet length: 299[0m
+[0;32mI (15824) wifi_sniffer: Channel: 1[0m
+[0;32mI (15834) wifi_sniffer: RSSI: -74[0m
+[0;32mI (15834) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (15904) wifi_sniffer: Packet length: 346[0m
+[0;32mI (15904) wifi_sniffer: Channel: 1[0m
+[0;32mI (15904) wifi_sniffer: RSSI: -77[0m
+[0;32mI (15904) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16004) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16004) wifi_sniffer: Channel: 1[0m
+[0;32mI (16004) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16004) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16014) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16014) wifi_sniffer: Channel: 1[0m
+[0;32mI (16024) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16024) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16104) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16104) wifi_sniffer: Channel: 1[0m
+[0;32mI (16104) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16104) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16114) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16114) wifi_sniffer: Channel: 1[0m
+[0;32mI (16124) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16124) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16134) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16134) wifi_sniffer: Channel: 1[0m
+[0;32mI (16144) wifi_sniffer: RSSI: -74[0m
+[0;32mI (16144) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16214) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16214) wifi_sniffer: Channel: 1[0m
+[0;32mI (16214) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16214) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16214) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16224) wifi_sniffer: Channel: 1[0m
+[0;32mI (16224) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16224) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16314) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16314) wifi_sniffer: Channel: 1[0m
+[0;32mI (16314) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16314) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16314) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16324) wifi_sniffer: Channel: 1[0m
+[0;32mI (16324) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16334) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16414) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16414) wifi_sniffer: Channel: 1[0m
+[0;32mI (16414) wifi_sniffer: RSSI: -79[0m
+[0;32mI (16414) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16424) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16424) wifi_sniffer: Channel: 1[0m
+[0;32mI (16434) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16434) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16434) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16444) wifi_sniffer: Channel: 1[0m
+[0;32mI (16444) wifi_sniffer: RSSI: -74[0m
+[0;32mI (16454) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16514) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16514) wifi_sniffer: Channel: 1[0m
+[0;32mI (16514) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16514) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16524) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16524) wifi_sniffer: Channel: 1[0m
+[0;32mI (16534) wifi_sniffer: RSSI: -74[0m
+[0;32mI (16534) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16624) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16624) wifi_sniffer: Channel: 1[0m
+[0;32mI (16624) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16624) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16624) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16634) wifi_sniffer: Channel: 1[0m
+[0;32mI (16634) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16634) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16644) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16644) wifi_sniffer: Channel: 1[0m
+[0;32mI (16654) wifi_sniffer: RSSI: -75[0m
+[0;32mI (16654) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16724) wifi_sniffer: Packet length: 346[0m
+[0;32mI (16724) wifi_sniffer: Channel: 1[0m
+[0;32mI (16724) wifi_sniffer: RSSI: -77[0m
+[0;32mI (16724) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (16724) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16734) wifi_sniffer: Channel: 1[0m
+[0;32mI (16734) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16744) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16744) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16754) wifi_sniffer: Channel: 1[0m
+[0;32mI (16754) wifi_sniffer: RSSI: -75[0m
+[0;32mI (16754) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16834) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16834) wifi_sniffer: Channel: 1[0m
+[0;32mI (16834) wifi_sniffer: RSSI: -75[0m
+[0;32mI (16834) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (16924) wifi_sniffer: Packet length: 298[0m
+[0;32mI (16924) wifi_sniffer: Channel: 1[0m
+[0;32mI (16934) wifi_sniffer: RSSI: -78[0m
+[0;32mI (16934) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (16934) wifi_sniffer: Packet length: 299[0m
+[0;32mI (16944) wifi_sniffer: Channel: 1[0m
+[0;32mI (16944) wifi_sniffer: RSSI: -74[0m
+[0;32mI (16944) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17034) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17034) wifi_sniffer: Channel: 1[0m
+[0;32mI (17034) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17034) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17034) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17044) wifi_sniffer: Channel: 1[0m
+[0;32mI (17044) wifi_sniffer: RSSI: -74[0m
+[0;32mI (17054) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17134) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17134) wifi_sniffer: Channel: 1[0m
+[0;32mI (17134) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17134) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17144) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17144) wifi_sniffer: Channel: 1[0m
+[0;32mI (17144) wifi_sniffer: RSSI: -75[0m
+[0;32mI (17154) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17234) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17234) wifi_sniffer: Channel: 1[0m
+[0;32mI (17234) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17234) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17244) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17244) wifi_sniffer: Channel: 1[0m
+[0;32mI (17244) wifi_sniffer: RSSI: -74[0m
+[0;32mI (17254) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17334) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17334) wifi_sniffer: Channel: 1[0m
+[0;32mI (17334) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17334) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17344) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17344) wifi_sniffer: Channel: 1[0m
+[0;32mI (17354) wifi_sniffer: RSSI: -77[0m
+[0;32mI (17354) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17364) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17364) wifi_sniffer: Channel: 1[0m
+[0;32mI (17364) wifi_sniffer: RSSI: -75[0m
+[0;32mI (17374) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17434) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17434) wifi_sniffer: Channel: 1[0m
+[0;32mI (17434) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17444) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17444) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17454) wifi_sniffer: Channel: 1[0m
+[0;32mI (17454) wifi_sniffer: RSSI: -77[0m
+[0;32mI (17454) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17464) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17464) wifi_sniffer: Channel: 1[0m
+[0;32mI (17474) wifi_sniffer: RSSI: -74[0m
+[0;32mI (17474) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17544) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17544) wifi_sniffer: Channel: 1[0m
+[0;32mI (17544) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17544) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17544) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17554) wifi_sniffer: Channel: 1[0m
+[0;32mI (17554) wifi_sniffer: RSSI: -74[0m
+[0;32mI (17564) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17644) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17644) wifi_sniffer: Channel: 1[0m
+[0;32mI (17644) wifi_sniffer: RSSI: -77[0m
+[0;32mI (17644) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17654) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17654) wifi_sniffer: Channel: 1[0m
+[0;32mI (17654) wifi_sniffer: RSSI: -77[0m
+[0;32mI (17664) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17664) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17674) wifi_sniffer: Channel: 1[0m
+[0;32mI (17674) wifi_sniffer: RSSI: -75[0m
+[0;32mI (17684) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17744) wifi_sniffer: Packet length: 346[0m
+[0;32mI (17744) wifi_sniffer: Channel: 1[0m
+[0;32mI (17744) wifi_sniffer: RSSI: -77[0m
+[0;32mI (17744) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (17754) wifi_sniffer: Packet length: 298[0m
+[0;32mI (17754) wifi_sniffer: Channel: 1[0m
+[0;32mI (17764) wifi_sniffer: RSSI: -78[0m
+[0;32mI (17764) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (17774) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17774) wifi_sniffer: Channel: 1[0m
+[0;32mI (17774) wifi_sniffer: RSSI: -73[0m
+[0;32mI (17784) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (17854) wifi_sniffer: Packet length: 299[0m
+[0;32mI (17854) wifi_sniffer: Channel: 1[0m
+[0;32mI (17854) wifi_sniffer: RSSI: -75[0m
+[0;32mI (17854) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18054) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18054) wifi_sniffer: Channel: 1[0m
+[0;32mI (18054) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18054) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18064) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18064) wifi_sniffer: Channel: 1[0m
+[0;32mI (18064) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18074) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18074) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18084) wifi_sniffer: Channel: 1[0m
+[0;32mI (18084) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18094) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18114) wifi_sniffer: Packet length: 340[0m
+[0;32mI (18114) wifi_sniffer: Channel: 1[0m
+[0;32mI (18114) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18114) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18124) wifi_sniffer: Packet length: 120[0m
+[0;32mI (18124) wifi_sniffer: Channel: 1[0m
+[0;32mI (18124) wifi_sniffer: RSSI: -84[0m
+[0;32mI (18134) wifi_sniffer: SSID: [0m
+[0;32mI (18134) wifi_sniffer: Packet length: 292[0m
+[0;32mI (18144) wifi_sniffer: Channel: 1[0m
+[0;32mI (18144) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18144) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18154) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18154) wifi_sniffer: Channel: 1[0m
+[0;32mI (18164) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18164) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18174) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18174) wifi_sniffer: Channel: 1[0m
+[0;32mI (18174) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18184) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18184) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18194) wifi_sniffer: Channel: 1[0m
+[0;32mI (18194) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18204) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18254) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18254) wifi_sniffer: Channel: 1[0m
+[0;32mI (18254) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18264) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18264) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18264) wifi_sniffer: Channel: 1[0m
+[0;32mI (18274) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18274) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18284) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18284) wifi_sniffer: Channel: 1[0m
+[0;32mI (18294) wifi_sniffer: RSSI: -75[0m
+[0;32mI (18294) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18364) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18364) wifi_sniffer: Channel: 1[0m
+[0;32mI (18364) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18364) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18364) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18374) wifi_sniffer: Channel: 1[0m
+[0;32mI (18374) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18384) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18384) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18384) wifi_sniffer: Channel: 1[0m
+[0;32mI (18394) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18394) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18464) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18464) wifi_sniffer: Channel: 1[0m
+[0;32mI (18464) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18464) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18464) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18474) wifi_sniffer: Channel: 1[0m
+[0;32mI (18474) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18484) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18484) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18494) wifi_sniffer: Channel: 1[0m
+[0;32mI (18494) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18494) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18564) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18564) wifi_sniffer: Channel: 1[0m
+[0;32mI (18564) wifi_sniffer: RSSI: -76[0m
+[0;32mI (18564) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18574) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18574) wifi_sniffer: Channel: 1[0m
+[0;32mI (18584) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18584) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18584) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18594) wifi_sniffer: Channel: 1[0m
+[0;32mI (18594) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18604) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18664) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18664) wifi_sniffer: Channel: 1[0m
+[0;32mI (18664) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18664) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18674) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18674) wifi_sniffer: Channel: 1[0m
+[0;32mI (18684) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18684) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18774) wifi_sniffer: Packet length: 298[0m
+[0;32mI (18774) wifi_sniffer: Channel: 1[0m
+[0;32mI (18774) wifi_sniffer: RSSI: -78[0m
+[0;32mI (18774) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (18774) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18784) wifi_sniffer: Channel: 1[0m
+[0;32mI (18784) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18794) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18884) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18884) wifi_sniffer: Channel: 1[0m
+[0;32mI (18884) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18884) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (18974) wifi_sniffer: Packet length: 346[0m
+[0;32mI (18974) wifi_sniffer: Channel: 1[0m
+[0;32mI (18974) wifi_sniffer: RSSI: -77[0m
+[0;32mI (18974) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (18984) wifi_sniffer: Packet length: 299[0m
+[0;32mI (18984) wifi_sniffer: Channel: 1[0m
+[0;32mI (18994) wifi_sniffer: RSSI: -74[0m
+[0;32mI (18994) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19084) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19084) wifi_sniffer: Channel: 1[0m
+[0;32mI (19084) wifi_sniffer: RSSI: -75[0m
+[0;32mI (19084) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19184) wifi_sniffer: Packet length: 346[0m
+[0;32mI (19184) wifi_sniffer: Channel: 1[0m
+[0;32mI (19184) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19184) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (19184) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19194) wifi_sniffer: Channel: 1[0m
+[0;32mI (19194) wifi_sniffer: RSSI: -77[0m
+[0;32mI (19194) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19284) wifi_sniffer: Packet length: 346[0m
+[0;32mI (19284) wifi_sniffer: Channel: 1[0m
+[0;32mI (19284) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19284) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (19284) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19294) wifi_sniffer: Channel: 1[0m
+[0;32mI (19294) wifi_sniffer: RSSI: -77[0m
+[0;32mI (19304) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19384) wifi_sniffer: Packet length: 346[0m
+[0;32mI (19384) wifi_sniffer: Channel: 1[0m
+[0;32mI (19384) wifi_sniffer: RSSI: -77[0m
+[0;32mI (19384) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (19394) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19394) wifi_sniffer: Channel: 1[0m
+[0;32mI (19404) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19404) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19494) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19494) wifi_sniffer: Channel: 1[0m
+[0;32mI (19494) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19494) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19494) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19504) wifi_sniffer: Channel: 1[0m
+[0;32mI (19504) wifi_sniffer: RSSI: -75[0m
+[0;32mI (19504) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19594) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19594) wifi_sniffer: Channel: 1[0m
+[0;32mI (19594) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19594) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19594) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19604) wifi_sniffer: Channel: 1[0m
+[0;32mI (19604) wifi_sniffer: RSSI: -74[0m
+[0;32mI (19614) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19694) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19694) wifi_sniffer: Channel: 1[0m
+[0;32mI (19694) wifi_sniffer: RSSI: -75[0m
+[0;32mI (19704) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19804) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19804) wifi_sniffer: Channel: 1[0m
+[0;32mI (19804) wifi_sniffer: RSSI: -74[0m
+[0;32mI (19804) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (19894) wifi_sniffer: Packet length: 346[0m
+[0;32mI (19894) wifi_sniffer: Channel: 1[0m
+[0;32mI (19894) wifi_sniffer: RSSI: -77[0m
+[0;32mI (19894) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (19904) wifi_sniffer: Packet length: 298[0m
+[0;32mI (19904) wifi_sniffer: Channel: 1[0m
+[0;32mI (19914) wifi_sniffer: RSSI: -78[0m
+[0;32mI (19914) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (19924) wifi_sniffer: Packet length: 299[0m
+[0;32mI (19924) wifi_sniffer: Channel: 1[0m
+[0;32mI (19924) wifi_sniffer: RSSI: -74[0m
+[0;32mI (19934) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20004) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20004) wifi_sniffer: Channel: 1[0m
+[0;32mI (20004) wifi_sniffer: RSSI: -76[0m
+[0;32mI (20004) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20004) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20014) wifi_sniffer: Channel: 1[0m
+[0;32mI (20014) wifi_sniffer: RSSI: -75[0m
+[0;32mI (20024) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20104) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20104) wifi_sniffer: Channel: 1[0m
+[0;32mI (20104) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20104) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20104) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20114) wifi_sniffer: Channel: 1[0m
+[0;32mI (20114) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20124) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20204) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20204) wifi_sniffer: Channel: 1[0m
+[0;32mI (20204) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20204) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20214) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20214) wifi_sniffer: Channel: 1[0m
+[0;32mI (20214) wifi_sniffer: RSSI: -76[0m
+[0;32mI (20224) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20304) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20304) wifi_sniffer: Channel: 1[0m
+[0;32mI (20304) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20304) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20314) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20314) wifi_sniffer: Channel: 1[0m
+[0;32mI (20324) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20324) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20334) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20334) wifi_sniffer: Channel: 1[0m
+[0;32mI (20334) wifi_sniffer: RSSI: -74[0m
+[0;32mI (20344) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20414) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20414) wifi_sniffer: Channel: 1[0m
+[0;32mI (20414) wifi_sniffer: RSSI: -76[0m
+[0;32mI (20414) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20514) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20514) wifi_sniffer: Channel: 1[0m
+[0;32mI (20514) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20514) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20514) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20524) wifi_sniffer: Channel: 1[0m
+[0;32mI (20524) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20534) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20534) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20534) wifi_sniffer: Channel: 1[0m
+[0;32mI (20544) wifi_sniffer: RSSI: -74[0m
+[0;32mI (20544) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20614) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20614) wifi_sniffer: Channel: 1[0m
+[0;32mI (20614) wifi_sniffer: RSSI: -77[0m
+[0;32mI (20614) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20624) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20624) wifi_sniffer: Channel: 1[0m
+[0;32mI (20624) wifi_sniffer: RSSI: -74[0m
+[0;32mI (20634) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20724) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20724) wifi_sniffer: Channel: 1[0m
+[0;32mI (20724) wifi_sniffer: RSSI: -75[0m
+[0;32mI (20724) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20824) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20824) wifi_sniffer: Channel: 1[0m
+[0;32mI (20824) wifi_sniffer: RSSI: -78[0m
+[0;32mI (20824) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20824) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20834) wifi_sniffer: Channel: 1[0m
+[0;32mI (20834) wifi_sniffer: RSSI: -76[0m
+[0;32mI (20844) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (20924) wifi_sniffer: Packet length: 346[0m
+[0;32mI (20924) wifi_sniffer: Channel: 1[0m
+[0;32mI (20924) wifi_sniffer: RSSI: -78[0m
+[0;32mI (20924) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (20924) wifi_sniffer: Packet length: 298[0m
+[0;32mI (20934) wifi_sniffer: Channel: 1[0m
+[0;32mI (20934) wifi_sniffer: RSSI: -78[0m
+[0;32mI (20944) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (20944) wifi_sniffer: Packet length: 299[0m
+[0;32mI (20944) wifi_sniffer: Channel: 1[0m
+[0;32mI (20954) wifi_sniffer: RSSI: -75[0m
+[0;32mI (20954) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (21024) wifi_sniffer: Packet length: 346[0m
+[0;32mI (21024) wifi_sniffer: Channel: 1[0m
+[0;32mI (21024) wifi_sniffer: RSSI: -78[0m
+[0;32mI (21024) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (21024) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21034) wifi_sniffer: Channel: 1[0m
+[0;32mI (21034) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21044) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21124) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21124) wifi_sniffer: Channel: 1[0m
+[0;32mI (21124) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21134) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21224) wifi_sniffer: Packet length: 346[0m
+[0;32mI (21224) wifi_sniffer: Channel: 1[0m
+[0;32mI (21224) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21224) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (21234) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21234) wifi_sniffer: Channel: 1[0m
+[0;32mI (21244) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21244) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21334) wifi_sniffer: Packet length: 346[0m
+[0;32mI (21334) wifi_sniffer: Channel: 1[0m
+[0;32mI (21334) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21334) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (21334) wifi_sniffer: Packet length: 299[0m
+[0;32mI (21344) wifi_sniffer: Channel: 1[0m
+[0;32mI (21344) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21344) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (21434) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21434) wifi_sniffer: Channel: 1[0m
+[0;32mI (21434) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21434) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21534) wifi_sniffer: Packet length: 346[0m
+[0;32mI (21534) wifi_sniffer: Channel: 1[0m
+[0;32mI (21534) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21534) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (21544) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21544) wifi_sniffer: Channel: 1[0m
+[0;32mI (21554) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21554) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21554) wifi_sniffer: Packet length: 299[0m
+[0;32mI (21564) wifi_sniffer: Channel: 1[0m
+[0;32mI (21564) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21574) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (21634) wifi_sniffer: Packet length: 346[0m
+[0;32mI (21634) wifi_sniffer: Channel: 1[0m
+[0;32mI (21634) wifi_sniffer: RSSI: -76[0m
+[0;32mI (21634) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (21744) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21744) wifi_sniffer: Channel: 1[0m
+[0;32mI (21744) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21744) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21744) wifi_sniffer: Packet length: 299[0m
+[0;32mI (21754) wifi_sniffer: Channel: 1[0m
+[0;32mI (21754) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21764) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (21944) wifi_sniffer: Packet length: 298[0m
+[0;32mI (21944) wifi_sniffer: Channel: 1[0m
+[0;32mI (21944) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21944) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (21954) wifi_sniffer: Packet length: 299[0m
+[0;32mI (21954) wifi_sniffer: Channel: 1[0m
+[0;32mI (21964) wifi_sniffer: RSSI: -77[0m
+[0;32mI (21964) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22044) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22044) wifi_sniffer: Channel: 1[0m
+[0;32mI (22044) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22044) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22054) wifi_sniffer: Packet length: 298[0m
+[0;32mI (22054) wifi_sniffer: Channel: 1[0m
+[0;32mI (22064) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22064) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (22144) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22144) wifi_sniffer: Channel: 1[0m
+[0;32mI (22144) wifi_sniffer: RSSI: -78[0m
+[0;32mI (22154) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22154) wifi_sniffer: Packet length: 298[0m
+[0;32mI (22164) wifi_sniffer: Channel: 1[0m
+[0;32mI (22164) wifi_sniffer: RSSI: -78[0m
+[0;32mI (22164) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (22254) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22254) wifi_sniffer: Channel: 1[0m
+[0;32mI (22254) wifi_sniffer: RSSI: -78[0m
+[0;32mI (22254) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22354) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22354) wifi_sniffer: Channel: 1[0m
+[0;32mI (22354) wifi_sniffer: RSSI: -78[0m
+[0;32mI (22354) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22364) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22364) wifi_sniffer: Channel: 1[0m
+[0;32mI (22364) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22374) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22454) wifi_sniffer: Packet length: 298[0m
+[0;32mI (22454) wifi_sniffer: Channel: 1[0m
+[0;32mI (22454) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22464) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (22464) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22474) wifi_sniffer: Channel: 1[0m
+[0;32mI (22474) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22474) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22554) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22554) wifi_sniffer: Channel: 1[0m
+[0;32mI (22554) wifi_sniffer: RSSI: -78[0m
+[0;32mI (22564) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22564) wifi_sniffer: Packet length: 298[0m
+[0;32mI (22574) wifi_sniffer: Channel: 1[0m
+[0;32mI (22574) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22574) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (22664) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22664) wifi_sniffer: Channel: 1[0m
+[0;32mI (22664) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22664) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22664) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22674) wifi_sniffer: Channel: 1[0m
+[0;32mI (22674) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22684) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22774) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22774) wifi_sniffer: Channel: 1[0m
+[0;32mI (22774) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22774) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22864) wifi_sniffer: Packet length: 346[0m
+[0;32mI (22864) wifi_sniffer: Channel: 1[0m
+[0;32mI (22864) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22864) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (22874) wifi_sniffer: Packet length: 298[0m
+[0;32mI (22874) wifi_sniffer: Channel: 1[0m
+[0;32mI (22884) wifi_sniffer: RSSI: -77[0m
+[0;32mI (22884) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (22894) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22894) wifi_sniffer: Channel: 1[0m
+[0;32mI (22894) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22904) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (22974) wifi_sniffer: Packet length: 299[0m
+[0;32mI (22974) wifi_sniffer: Channel: 1[0m
+[0;32mI (22974) wifi_sniffer: RSSI: -76[0m
+[0;32mI (22974) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23074) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23074) wifi_sniffer: Channel: 1[0m
+[0;32mI (23074) wifi_sniffer: RSSI: -78[0m
+[0;32mI (23074) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23074) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23084) wifi_sniffer: Channel: 1[0m
+[0;32mI (23084) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23094) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23174) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23174) wifi_sniffer: Channel: 1[0m
+[0;32mI (23174) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23174) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23274) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23274) wifi_sniffer: Channel: 1[0m
+[0;32mI (23274) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23274) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23284) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23284) wifi_sniffer: Channel: 1[0m
+[0;32mI (23294) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23294) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23294) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23304) wifi_sniffer: Channel: 1[0m
+[0;32mI (23304) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23314) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23374) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23374) wifi_sniffer: Channel: 1[0m
+[0;32mI (23374) wifi_sniffer: RSSI: -78[0m
+[0;32mI (23384) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23384) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23384) wifi_sniffer: Channel: 1[0m
+[0;32mI (23394) wifi_sniffer: RSSI: -78[0m
+[0;32mI (23394) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23404) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23404) wifi_sniffer: Channel: 1[0m
+[0;32mI (23414) wifi_sniffer: RSSI: -76[0m
+[0;32mI (23414) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23484) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23484) wifi_sniffer: Channel: 1[0m
+[0;32mI (23484) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23484) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23484) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23494) wifi_sniffer: Channel: 1[0m
+[0;32mI (23494) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23504) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23504) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23504) wifi_sniffer: Channel: 1[0m
+[0;32mI (23514) wifi_sniffer: RSSI: -76[0m
+[0;32mI (23514) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23584) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23584) wifi_sniffer: Channel: 1[0m
+[0;32mI (23584) wifi_sniffer: RSSI: -76[0m
+[0;32mI (23584) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23594) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23594) wifi_sniffer: Channel: 1[0m
+[0;32mI (23594) wifi_sniffer: RSSI: -76[0m
+[0;32mI (23604) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23684) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23684) wifi_sniffer: Channel: 1[0m
+[0;32mI (23684) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23684) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23784) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23784) wifi_sniffer: Channel: 1[0m
+[0;32mI (23784) wifi_sniffer: RSSI: -76[0m
+[0;32mI (23784) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23794) wifi_sniffer: Packet length: 298[0m
+[0;32mI (23794) wifi_sniffer: Channel: 1[0m
+[0;32mI (23804) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23804) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (23814) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23814) wifi_sniffer: Channel: 1[0m
+[0;32mI (23824) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23824) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23894) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23894) wifi_sniffer: Channel: 1[0m
+[0;32mI (23894) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23894) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23894) wifi_sniffer: Packet length: 299[0m
+[0;32mI (23904) wifi_sniffer: Channel: 1[0m
+[0;32mI (23904) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23904) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (23994) wifi_sniffer: Packet length: 346[0m
+[0;32mI (23994) wifi_sniffer: Channel: 1[0m
+[0;32mI (23994) wifi_sniffer: RSSI: -77[0m
+[0;32mI (23994) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (23994) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24004) wifi_sniffer: Channel: 1[0m
+[0;32mI (24004) wifi_sniffer: RSSI: -76[0m
+[0;32mI (24014) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24014) wifi_sniffer: Packet length: 299[0m
+[0;32mI (24024) wifi_sniffer: Channel: 1[0m
+[0;32mI (24024) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24024) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (24094) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24094) wifi_sniffer: Channel: 1[0m
+[0;32mI (24094) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24094) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24204) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24204) wifi_sniffer: Channel: 1[0m
+[0;32mI (24204) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24204) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24304) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24304) wifi_sniffer: Channel: 1[0m
+[0;32mI (24304) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24304) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24304) wifi_sniffer: Packet length: 299[0m
+[0;32mI (24314) wifi_sniffer: Channel: 1[0m
+[0;32mI (24314) wifi_sniffer: RSSI: -76[0m
+[0;32mI (24324) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (24404) wifi_sniffer: Packet length: 346[0m
+[0;32mI (24404) wifi_sniffer: Channel: 1[0m
+[0;32mI (24404) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24404) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (24404) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24414) wifi_sniffer: Channel: 1[0m
+[0;32mI (24414) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24424) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24604) wifi_sniffer: Packet length: 346[0m
+[0;32mI (24604) wifi_sniffer: Channel: 1[0m
+[0;32mI (24604) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24604) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (24614) wifi_sniffer: Packet length: 299[0m
+[0;32mI (24614) wifi_sniffer: Channel: 1[0m
+[0;32mI (24624) wifi_sniffer: RSSI: -76[0m
+[0;32mI (24624) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (24704) wifi_sniffer: Packet length: 346[0m
+[0;32mI (24704) wifi_sniffer: Channel: 1[0m
+[0;32mI (24704) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24714) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (24714) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24724) wifi_sniffer: Channel: 1[0m
+[0;32mI (24724) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24724) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24734) wifi_sniffer: Packet length: 299[0m
+[0;32mI (24734) wifi_sniffer: Channel: 1[0m
+[0;32mI (24744) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24744) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (24814) wifi_sniffer: Packet length: 346[0m
+[0;32mI (24814) wifi_sniffer: Channel: 1[0m
+[0;32mI (24814) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24814) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (24814) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24824) wifi_sniffer: Channel: 1[0m
+[0;32mI (24824) wifi_sniffer: RSSI: -78[0m
+[0;32mI (24834) wifi_sniffer: SSID: MEO-WiFi[0m
+[0;32mI (24834) wifi_sniffer: Packet length: 299[0m
+[0;32mI (24844) wifi_sniffer: Channel: 1[0m
+[0;32mI (24844) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24844) wifi_sniffer: SSID: midea_c3_0328[0m
+[0;32mI (24914) wifi_sniffer: Packet length: 346[0m
+[0;32mI (24914) wifi_sniffer: Channel: 1[0m
+[0;32mI (24914) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24914) wifi_sniffer: SSID: homenetwork[0m
+[0;32mI (24924) wifi_sniffer: Packet length: 298[0m
+[0;32mI (24924) wifi_sniffer: Channel: 1[0m
+[0;32mI (24924) wifi_sniffer: RSSI: -77[0m
+[0;32mI (24934) wifi_sniffer: SSID: MEO-WiFi[0m
+
